@@ -1272,7 +1272,7 @@
   <object id="6" name="enemy_1" x="49" y="274">
    <point/>
   </object>
-  <object id="8" name="portal" x="148.212" y="1901.24">
+  <object id="8" name="portal" x="139.121" y="1831.55">
    <properties>
     <property name="id" type="int" value="1"/>
     <property name="target" type="int" value="1"/>
