@@ -437,14 +437,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
 		// sauf sans controle de puissance :
 		
-		if (this.jumpKey.isDown) {
-			this.jumpKey.duration += this.scene.game.loop.delta; // Increment the duration while the key is held
-		}
+		
 
 		if (this.canJump() && Phaser.Input.Keyboard.JustDown(this.jumpKey)) 
 		{
-			console.log(this.jumpKey.duration);
-			this.jumpKey.duration = 0; // Reset the duration when the jump starts
 		
 
 			this.body.setVelocityY(-1 * this.getJumpHeight());
@@ -527,10 +523,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
        /* met a jour les éléments permettant de calculer le statut de saut du player
        */   
                // contact du sol
-        if (this.body.onFloor()) {
+        if (this.body.blocked.down) {
             this.isJumping = false;
             this.remainingJump = this.baseRemainingJump;
-            this.setVelocityY(0);
+            //this.setVelocityY(0);
         }
 
         
