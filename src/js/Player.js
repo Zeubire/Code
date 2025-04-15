@@ -621,6 +621,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 	resetPowerUps() {
  		this.playerProperties.canTripleJump = false;
  		this.playerProperties.canDoubleJump = false;
+        this.playerProperties.canFly = false
 		this.remainingJump = 1;
 		console.log("[debug] Tous les power-ups ont été réinitialisés");
 	}
