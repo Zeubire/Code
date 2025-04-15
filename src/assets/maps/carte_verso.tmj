@@ -1,12 +1,4 @@
 { "compressionlevel":-1,
- "editorsettings":
-    {
-     "export":
-        {
-         "format":"json",
-         "target":"carte_verso.tmj"
-        }
-    },
  "height":128,
  "infinite":false,
  "layers":[
