@@ -231,10 +231,10 @@ export default class loading extends Phaser.Scene {
                 remainingMonsters++;
             }
             if (point.name == "item") {
-                if (typeof (point.properties) == 'undefined') {
+                if (typeof (point.properties) == 'undefined' || point.properties[0].name != "type") {
                 remainingItems++;
             }
-            }
+            } 
         }, this);
 
         // chargement de l'interface de jeu avec les parametres de victoire
