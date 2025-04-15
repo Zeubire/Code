@@ -1448,6 +1448,34 @@
                  "width":0,
                  "x":6798.42424242424,
                  "y":676.181818181818
+                }, 
+                {
+                 "height":0,
+                 "id":33,
+                 "name":"powerUp",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"item_description",
+                         "type":"string",
+                         "value":"tous vos pouvoirs sp\u00e9ciaux ont \u00e9t\u00e9 perdus"
+                        }, 
+                        {
+                         "name":"item_name",
+                         "type":"string",
+                         "value":"reset"
+                        }, 
+                        {
+                         "name":"item_type",
+                         "type":"string",
+                         "value":"reset"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":6800,
+                 "y":693
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1509,7 +1537,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":33,
+ "nextobjectid":34,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",

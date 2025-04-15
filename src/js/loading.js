@@ -95,6 +95,7 @@ export default class loading extends Phaser.Scene {
         this.load.image("bullet", "src/assets/images/bullet.png");
         this.load.image("item_to_collect", "src/assets/images/item_to_collect.png");
         this.load.image("item_jump", "src/assets/images/item_jump.png");
+        this.load.image("item_reset", "src/assets/images/item_reset.png");
         
         this.load.image("item_doubleJump", "src/assets/images/item_doubleJump.png");
         this.load.image("item_tripleJump", "src/assets/images/item_tripleJump.png");
