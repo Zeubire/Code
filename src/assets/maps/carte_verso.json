@@ -1743,7 +1743,7 @@
                         {
                          "name":"id_text",
                          "type":"int",
-                         "value":2
+                         "value":3
                         }],
                  "rotation":0,
                  "type":"",
@@ -1760,7 +1760,7 @@
                         {
                          "name":"id",
                          "type":"int",
-                         "value":2
+                         "value":3
                         }],
                  "rotation":0,
                  "text":
