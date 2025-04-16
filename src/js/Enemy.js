@@ -279,14 +279,14 @@ export default class Enemy extends Phaser.Physics.Arcade.Sprite {
         this.blinkAnimation = this.scene.tweens.add({
             targets: this,
             alpha: 0.3, // Baisser l'opacité à 50%
-            duration: 150, // Durée d'une itération de clignotement
+            duration: 60, // Durée d'une itération de clignotement
             ease: 'Linear',
             repeat: -1, // Répéter indéfiniment
             yoyo: true // Inverser l'animation (pour que le sprite clignote)
         });
 
         // Timer pour revenir à l'état normal après 1.5 secondes
-        this.scene.time.delayedCall(1500, () => {
+        this.scene.time.delayedCall(600, () => {
             this.invincible = false;
             this.clearTint();
             this.alpha = 1; // Remettre l'opacité à 100%
