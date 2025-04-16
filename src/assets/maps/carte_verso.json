@@ -1598,6 +1598,29 @@
                  "width":0,
                  "x":4024.24242424242,
                  "y":2975.75757575758
+                }, 
+                {
+                 "height":0,
+                 "id":71,
+                 "name":"portal",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"id",
+                         "type":"int",
+                         "value":7
+                        }, 
+                        {
+                         "name":"target",
+                         "type":"int",
+                         "value":7
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":156,
+                 "y":2976
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1783,7 +1806,7 @@
          "y":0
         }],
  "nextlayerid":12,
- "nextobjectid":71,
+ "nextobjectid":72,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",
