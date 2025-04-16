@@ -25,4 +25,4 @@ enemy_3_jump_right.nbFrames=4
 enemy_4_move_right.nbFrames=6
 enemy_5_move_right.nbFrames=4
 projectile_player.nbFrames=7
-
+projectile_enemy.nbFrames=1
