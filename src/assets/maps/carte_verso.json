@@ -1598,29 +1598,6 @@
                  "width":0,
                  "x":4024.24242424242,
                  "y":2975.75757575758
-                }, 
-                {
-                 "height":0,
-                 "id":71,
-                 "name":"portal",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"id",
-                         "type":"int",
-                         "value":7
-                        }, 
-                        {
-                         "name":"target",
-                         "type":"int",
-                         "value":7
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":6464,
-                 "y":2764
                 }],
          "opacity":1,
          "type":"objectgroup",
