@@ -90,6 +90,15 @@ export default class loading extends Phaser.Scene {
         this.load.image("main_background_verso", "src/assets/images/main_background_verso.png");
         this.load.image("main_background_verso_over_parallax_effect", "src/assets/images/main_background_verso_over_parallax_effect.png");
 
+        /* chargement des sons */
+        this.load.audio("son_bullet", "src/assets/sounds/son_bullet.mp3");
+        this.load.audio("son_jump", "src/assets/sounds/son_jump.mp3");
+        this.load.audio("son_item", "src/assets/sounds/son_item.mp3");
+        this.load.audio("son_game_over", "src/assets/sounds/son_game_over.mp3");
+        this.load.audio("son_win", "src/assets/sounds/son_win.mp3");
+        this.load.audio("son_game", "src/assets/sounds/son_game.mp3");
+        this.load.audio("son_intro", "src/assets/sounds/son_intro.mp3");
+
         /* chargement des autres textures */
         this.load.image("destination", "src/assets/images/destination.png");
         this.load.image("bullet", "src/assets/images/bullet.png");
@@ -197,6 +206,51 @@ export default class loading extends Phaser.Scene {
         console.log("Fichiers item_to_collect_*** chargés :", loadedItemToCollectFiles);
 
         this.game.config.default_gravity = this.physics.world.gravity.y;
+
+        if (this.cache.audio.exists("son_bullet")) {
+            this.game.config.son_bullet = this.sound.add("son_bullet");
+        } else {
+            console.warn("Audio file 'son_bullet' not loaded properly.");
+        }
+        if (this.cache.audio.exists("son_jump")) {
+            this.game.config.son_jump = this.sound.add("son_jump");
+        } else {
+            console.warn("Audio file 'son_jump' not loaded properly.");
+        }
+        if (this.cache.audio.exists("son_item")) {
+            this.game.config.son_item = this.sound.add("son_item");
+        } else {
+            console.warn("Audio file 'son_item' not loaded properly.");
+        }
+
+        if (this.cache.audio.exists("son_game")) {
+            this.game.config.son_game = this.sound.add("son_game");
+        }
+        else {
+            console.warn("Audio file 'son_game' not loaded properly.");
+        }
+        if (this.cache.audio.exists("son_game_over")) {
+            this.game.config.son_game_over = this.sound.add("son_game_over");
+        } else {
+            console.warn("Audio file 'son_game_over' not loaded properly.");
+        }
+        if (this.cache.audio.exists("son_win")) {
+            this.game.config.son_win = this.sound.add("son_win");
+        } else {
+            console.warn("Audio file 'son_win' not loaded properly.");
+        }
+        if (this.cache.audio.exists("son_game")) {
+            this.game.config.son_game = this.sound.add("son_game");
+        } else {
+            console.warn("Audio file 'son_game' not loaded properly.");
+        }
+        
+          if (this.cache.audio.exists("son_intro")) {
+            this.game.config.son_game = this.sound.add("son_intro");
+        } else {
+            console.warn("Audio file 'son_intro' not loaded properly.");
+        }
+
 
         // chargement des scenes
         this.scene.add('accueil', accueil, false);
