@@ -138,6 +138,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
      * Gère l'action de tir (corps à corps ou à distance).
      */
     fire() {
+        if (!this.scene.sound.get('son_bullet')) {
+            console.warn("Le son 'son_bullet' n'est pas chargé dans la scène.");
+        } else {
+            this.scene.sound.play('son_bullet');
+        }
         // attaque au corps à corps
         if (this.closeCombat == true) {
             this.weapon.enableBody(true, this.x, this.y, true, true);
